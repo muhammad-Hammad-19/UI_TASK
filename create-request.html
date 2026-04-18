@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HelpHub AI — Create request</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/helphub.css" />
+  </head>
+  <body class="hh-page-bg">
+    <div class="hh-wrap hh-page-pad">
+      <header class="hh-topbar">
+        <a href="index.html" class="hh-logo">
+          <span class="hh-logo__mark">H</span>
+          HelpHub AI
+        </a>
+        <nav class="hh-nav">
+          <a href="dashboard.html">Dashboard</a>
+          <a href="explore.html">Explore</a>
+          <a href="create-request.html" class="hh-btn-pill is-active">Create Request</a>
+        </nav>
+      </header>
+
+      <section class="hh-hero-dark hh-hero-dark--alt">
+        <p class="hh-meta hh-meta--light">Create request</p>
+        <h1>Turn a rough problem into a clear help request.</h1>
+        <p>Use built-in AI suggestions for category, urgency, tags, and a stronger description rewrite.</p>
+      </section>
+
+      <div class="hh-grid-2 hh-grid-2--wide-left hh-mt-section">
+        <div class="hh-card hh-card--white">
+          <form>
+            <div class="hh-field">
+              <label for="title">Title</label>
+              <input
+                class="hh-input"
+                id="title"
+                placeholder="Need review on my JavaScript quiz app before submission"
+              />
+            </div>
+            <div class="hh-field">
+              <label for="desc">Description</label>
+              <textarea
+                class="hh-textarea"
+                id="desc"
+                placeholder="Explain the challenge, your current progress, deadline, and what kind of help would be useful."
+              ></textarea>
+            </div>
+            <div class="hh-row-2">
+              <div class="hh-field">
+                <label for="tags">Tags</label>
+                <input class="hh-input" id="tags" value="JavaScript, Debugging, Review" />
+              </div>
+              <div class="hh-field">
+                <label for="category">Category</label>
+                <select class="hh-select" id="category">
+                  <option>Web Development</option>
+                  <option>Design</option>
+                  <option>Career</option>
+                </select>
+              </div>
+            </div>
+            <div class="hh-field hh-field--narrow">
+              <label for="urgency">Urgency</label>
+              <select class="hh-select" id="urgency">
+                <option>High</option>
+                <option>Medium</option>
+                <option>Low</option>
+              </select>
+            </div>
+            <div class="hh-actions-row">
+              <button type="button" class="hh-btn hh-btn--outline">Apply AI suggestions</button>
+              <button type="button" class="hh-btn hh-btn--teal">Publish request</button>
+            </div>
+          </form>
+        </div>
+
+        <aside class="hh-card hh-card--white">
+          <p class="hh-meta">AI assistant</p>
+          <h2 class="hh-card-title hh-card-title--flush hh-ai-aside-title">Smart request guidance</h2>
+          <div class="hh-list-row">
+            <div>
+              <span class="hh-ai-row-label">Suggested category</span>
+              <p class="hh-ai-row-val">Community</p>
+            </div>
+          </div>
+          <div class="hh-list-row">
+            <div>
+              <span class="hh-ai-row-label">Detected urgency</span>
+              <p class="hh-ai-row-val">Low</p>
+            </div>
+          </div>
+          <div class="hh-list-row">
+            <div>
+              <span class="hh-ai-row-label">Suggested tags</span>
+              <p class="hh-ai-row-note">Add more detail for smarter tags</p>
+            </div>
+          </div>
+          <div class="hh-list-row hh-list-row--flush">
+            <div>
+              <span class="hh-ai-row-label">Rewrite suggestion</span>
+              <p class="hh-ai-row-note">Start describing the challenge to generate a stronger version.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>

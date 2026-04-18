@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HelpHub AI — Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/helphub.css" />
+  </head>
+  <body class="hh-login-page">
+    <header class="hh-wrap hh-login-header">
+      <div class="hh-topbar">
+        <a href="index.html" class="hh-logo">
+          <span class="hh-logo__mark">H</span>
+          HelpHub AI
+        </a>
+        <nav class="hh-nav">
+          <a href="index.html">Home</a>
+          <a href="explore.html">Explore</a>
+          <a href="leaderboard.html">Leaderboard</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="hh-login-grid">
+      <section class="hh-login-left" aria-labelledby="access-title">
+        <p class="hh-meta hh-meta--light">Community access</p>
+        <h1 id="access-title">Enter the support network.</h1>
+        <p>
+          Choose a demo identity, set your role, and jump into a multi-page product flow for asking, offering, and
+          tracking help with a polished interface.
+        </p>
+        <ul>
+          <li>Role-based entry for Need Help, Can Help, or Both</li>
+          <li>Direct path into dashboard, requests, AI Center, and community feed</li>
+          <li>Persistent demo session powered by LocalStorage</li>
+        </ul>
+      </section>
+
+      <section class="hh-login-right" aria-labelledby="auth-title">
+        <p class="hh-meta">Login / signup</p>
+        <h2 id="auth-title">Authenticate your community profile</h2>
+        <form action="dashboard.html" method="get">
+          <div class="hh-field">
+            <label for="demo-user">Select demo user</label>
+            <select class="hh-select" id="demo-user" name="user">
+              <option>Ayesha Khan</option>
+              <option>Sara Noor</option>
+              <option>Hassan Ali</option>
+            </select>
+          </div>
+          <div class="hh-field">
+            <label for="role">Role selection</label>
+            <select class="hh-select" id="role" name="role">
+              <option>Both</option>
+              <option>Need help</option>
+              <option>Can help</option>
+            </select>
+          </div>
+          <div class="hh-row-2">
+            <div class="hh-field hh-field--inline-row">
+              <label for="email">Email</label>
+              <input class="hh-input" id="email" type="email" value="community@helphub.ai" autocomplete="username" />
+            </div>
+            <div class="hh-field hh-field--inline-row">
+              <label for="pw">Password</label>
+              <input class="hh-input" id="pw" type="password" value="••••••••" autocomplete="current-password" />
+            </div>
+          </div>
+          <button type="submit" class="hh-btn hh-btn--primary hh-btn--block hh-btn--login-submit">
+            Continue to dashboard
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

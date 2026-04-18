@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HelpHub AI — Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/helphub.css" />
+  </head>
+  <body class="hh-page-bg">
+    <div class="hh-wrap hh-page-pad">
+      <header class="hh-topbar">
+        <a href="index.html" class="hh-logo">
+          <span class="hh-logo__mark">H</span>
+          HelpHub AI
+        </a>
+        <nav class="hh-nav">
+          <a href="dashboard.html" class="is-active">Dashboard</a>
+          <a href="explore.html">Explore</a>
+          <a href="create-request.html">Create Request</a>
+          <a href="ai-center.html">AI Center</a>
+          <a href="messages.html">Messages</a>
+        </nav>
+      </header>
+
+      <section class="hh-hero-dark hh-hero-dark--alt">
+        <p class="hh-meta hh-meta--light">Your workspace</p>
+        <h1>Welcome back — track requests, helpers, and next steps.</h1>
+        <p>Jump into the feed, publish a new request, or review AI signals for the community.</p>
+      </section>
+
+      <div class="hh-grid-3 hh-mt-section">
+        <div class="hh-stat-card">
+          <p class="hh-meta hh-stat-meta-tight">Active</p>
+          <h3>5</h3>
+          <p>Open requests you are watching</p>
+        </div>
+        <div class="hh-stat-card">
+          <p class="hh-meta hh-stat-meta-tight">Helping</p>
+          <h3>3</h3>
+          <p>Conversations in progress</p>
+        </div>
+        <div class="hh-stat-card">
+          <p class="hh-meta hh-stat-meta-tight">Trust</p>
+          <h3>100%</h3>
+          <p>Your current trust score</p>
+        </div>
+      </div>
+
+      <div class="hh-grid-2 hh-mt-section">
+        <div class="hh-card hh-card--white">
+          <p class="hh-meta">Shortcuts</p>
+          <h2 class="hh-card-title hh-card-title--flush">Continue where you left off</h2>
+          <div class="hh-stack">
+            <a class="hh-btn hh-btn--outline hh-btn--block" href="explore.html">Browse help requests</a>
+            <a class="hh-btn hh-btn--teal hh-btn--block" href="create-request.html">Create a request</a>
+            <a class="hh-btn hh-btn--outline hh-btn--block" href="profile.html">Edit profile</a>
+          </div>
+        </div>
+        <div class="hh-card hh-card--white">
+          <p class="hh-meta">Latest</p>
+          <h2 class="hh-card-title hh-card-title--flush">Recent activity</h2>
+          <p class="hh-dash-activity">
+            “Need help making my portfolio responsive…” was marked <strong>solved</strong>.
+          </p>
+          <p class="hh-dash-link">
+            <a href="notifications.html" class="hh-link-teal">View notifications →</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

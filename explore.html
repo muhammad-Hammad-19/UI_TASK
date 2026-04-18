@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HelpHub AI — Explore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/helphub.css" />
+  </head>
+  <body class="hh-page-bg">
+    <div class="hh-wrap hh-page-pad">
+      <header class="hh-topbar">
+        <a href="index.html" class="hh-logo">
+          <span class="hh-logo__mark hh-logo__mark--round">H</span>
+          HelpHub AI
+        </a>
+        <nav class="hh-nav">
+          <a href="dashboard.html">Dashboard</a>
+          <a href="explore.html" class="is-active">Explore</a>
+          <a href="leaderboard.html">Leaderboard</a>
+          <a href="notifications.html">Notifications</a>
+        </nav>
+      </header>
+
+      <section class="hh-hero-dark hh-hero-dark--alt">
+        <p class="hh-meta hh-meta--light">Explore / feed</p>
+        <h1>Browse help requests with filterable community context.</h1>
+        <p>Filter by category, urgency, skills, and location to surface the best matches.</p>
+      </section>
+
+      <div class="hh-explore-layout hh-mt-section">
+        <aside class="hh-filters" aria-label="Filters">
+          <p class="hh-meta">Filters</p>
+          <h2 class="hh-card-title hh-card-title--flush">Refine the feed</h2>
+          <div class="hh-field">
+            <label for="cat">Category</label>
+            <select class="hh-select" id="cat">
+              <option>All categories</option>
+              <option>Web Development</option>
+              <option>Design</option>
+              <option>Career</option>
+            </select>
+          </div>
+          <div class="hh-field">
+            <label for="urg">Urgency</label>
+            <select class="hh-select" id="urg">
+              <option>All urgency levels</option>
+              <option>High</option>
+              <option>Medium</option>
+              <option>Low</option>
+            </select>
+          </div>
+          <div class="hh-field">
+            <label for="skills">Skills</label>
+            <input class="hh-input" id="skills" placeholder="React, Figma, Git/GitHub" />
+          </div>
+          <div class="hh-field hh-field--inline-row">
+            <label for="loc">Location</label>
+            <input class="hh-input" id="loc" placeholder="Karachi, Lahore, Remote" />
+          </div>
+        </aside>
+
+        <div>
+          <article class="hh-feed-card">
+            <div class="hh-tags">
+              <span class="hh-tag hh-tag--green">Web Development</span>
+              <span class="hh-tag hh-tag--red">High</span>
+              <span class="hh-tag hh-tag--mint">Solved</span>
+            </div>
+            <h3>Need help</h3>
+            <p class="hh-explore-text">Short request — looking for a quick assist.</p>
+            <div class="hh-feed-foot">
+              <div>
+                <strong>Ayesha Khan</strong><br />
+                <small>Karachi • 3 helpers interested</small>
+              </div>
+              <a class="hh-btn hh-btn--outline hh-btn--sm" href="request-detail.html">Open details</a>
+            </div>
+          </article>
+
+          <article class="hh-feed-card">
+            <div class="hh-tags">
+              <span class="hh-tag hh-tag--green">Web Development</span>
+              <span class="hh-tag hh-tag--red">High</span>
+              <span class="hh-tag hh-tag--mint">Solved</span>
+            </div>
+            <h3>Need help making my portfolio responsive before demo day</h3>
+            <p class="hh-explore-text">Layout shifts on mobile — need breakpoints and typography tweaks.</p>
+            <div class="hh-tags hh-tags--tight">
+              <span class="hh-tag hh-tag--skill">HTML/CSS</span>
+              <span class="hh-tag hh-tag--skill">Responsive</span>
+              <span class="hh-tag hh-tag--skill">Portfolio</span>
+            </div>
+            <div class="hh-feed-foot">
+              <div>
+                <strong>Sara Noor</strong><br />
+                <small>Lahore • 5 helpers interested</small>
+              </div>
+              <a class="hh-btn hh-btn--outline hh-btn--sm" href="request-detail.html">Open details</a>
+            </div>
+          </article>
+
+          <article class="hh-feed-card">
+            <div class="hh-tags">
+              <span class="hh-tag hh-tag--beige">Design</span>
+              <span class="hh-tag hh-tag--orange">Medium</span>
+              <span class="hh-tag hh-tag--teal hh-tag--open-outline">Open</span>
+            </div>
+            <h3>Looking for Figma feedback on a volunteer event poster</h3>
+            <p class="hh-explore-text">Visual hierarchy and print-safe margins.</p>
+            <div class="hh-tags hh-tags--tight">
+              <span class="hh-tag hh-tag--skill">Figma</span>
+              <span class="hh-tag hh-tag--skill">Poster</span>
+              <span class="hh-tag hh-tag--skill">Design review</span>
+            </div>
+            <div class="hh-feed-foot">
+              <div>
+                <strong>Ayesha Khan</strong><br />
+                <small>Karachi • 2 helpers interested</small>
+              </div>
+              <a class="hh-btn hh-btn--outline hh-btn--sm" href="request-detail.html">Open details</a>
+            </div>
+          </article>
+
+          <article class="hh-feed-card">
+            <div class="hh-tags">
+              <span class="hh-tag hh-tag--gray">Career</span>
+              <span class="hh-tag hh-tag--green">Low</span>
+              <span class="hh-tag hh-tag--mint">Solved</span>
+            </div>
+            <h3>Need mock interview support for internship applications</h3>
+            <p class="hh-explore-text">Behavioral and technical frontend questions.</p>
+            <div class="hh-tags hh-tags--tight">
+              <span class="hh-tag hh-tag--skill">Interview prep</span>
+              <span class="hh-tag hh-tag--skill">Career</span>
+              <span class="hh-tag hh-tag--skill">Frontend</span>
+            </div>
+            <div class="hh-feed-foot">
+              <div>
+                <strong>Sara Noor</strong><br />
+                <small>Remote • 6 helpers interested</small>
+              </div>
+              <a class="hh-btn hh-btn--outline hh-btn--sm" href="request-detail.html">Open details</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

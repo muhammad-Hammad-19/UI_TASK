@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HelpHub AI — Messages</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/helphub.css" />
+  </head>
+  <body class="hh-page-bg">
+    <div class="hh-wrap hh-page-pad">
+      <header class="hh-topbar">
+        <a href="index.html" class="hh-logo">
+          <span class="hh-logo__mark">H</span>
+          HelpHub AI
+        </a>
+        <nav class="hh-nav">
+          <a href="dashboard.html">Dashboard</a>
+          <a href="explore.html">Explore</a>
+          <a href="messages.html" class="is-active">Messages</a>
+        </nav>
+      </header>
+
+      <section class="hh-hero-dark hh-hero-dark--alt">
+        <p class="hh-meta hh-meta--light">Interaction / messaging</p>
+        <h1>Keep support moving through direct communication.</h1>
+        <p>Basic messaging gives helpers and requesters a clear follow-up path once a match happens.</p>
+      </section>
+
+      <div class="hh-grid-2 hh-mt-section">
+        <section class="hh-card hh-card--white hh-card--msg" aria-labelledby="stream-title">
+          <p class="hh-meta">Conversation stream</p>
+          <h2 id="stream-title" class="hh-card-title hh-card-title--flush">Recent messages</h2>
+
+          <div class="hh-notif-row">
+            <div>
+              <strong>Ayesha Khan → Sara Noor</strong>
+              <small class="hh-msg-preview">Thanks — I can review your portfolio tonight. Share the repo link when ready.</small>
+            </div>
+            <span class="hh-time-pill">09:45 AM</span>
+          </div>
+          <div class="hh-notif-row">
+            <div>
+              <strong>Sara Noor → Ayesha Khan</strong>
+              <small class="hh-msg-preview">Sounds good — pushing an update to the hero section now.</small>
+            </div>
+            <span class="hh-time-pill">Yesterday</span>
+          </div>
+        </section>
+
+        <section class="hh-card hh-card--white hh-card--msg" aria-labelledby="send-title">
+          <p class="hh-meta">Send message</p>
+          <h2 id="send-title" class="hh-card-title hh-card-title--flush">Start a conversation</h2>
+          <form>
+            <div class="hh-field">
+              <label for="to">To</label>
+              <select class="hh-select" id="to">
+                <option>Sara Noor</option>
+                <option>Hassan Ali</option>
+                <option>Ayesha Khan</option>
+              </select>
+            </div>
+            <div class="hh-field">
+              <label for="msg">Message</label>
+              <textarea
+                class="hh-textarea"
+                id="msg"
+                placeholder="Share support details, ask for files, or suggest next steps."
+              ></textarea>
+            </div>
+            <button type="button" class="hh-btn hh-btn--send-grad hh-btn--block hh-btn--pill-wide">Send</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

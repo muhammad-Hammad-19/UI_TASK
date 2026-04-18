@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HelpHub AI — Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/helphub.css" />
+  </head>
+  <body class="hh-page-bg">
+    <div class="hh-wrap hh-page-pad">
+      <header class="hh-topbar">
+        <a href="index.html" class="hh-logo">
+          <span class="hh-logo__mark">H</span>
+          HelpHub AI
+        </a>
+        <nav class="hh-nav">
+          <a href="dashboard.html">Dashboard</a>
+          <a href="login.html">Onboarding</a>
+          <a href="profile.html" class="is-active">Profile</a>
+        </nav>
+      </header>
+
+      <section class="hh-hero-dark hh-hero-dark--profile">
+        <p class="hh-meta hh-meta--light">Profile</p>
+        <h1>Ayesha Khan</h1>
+        <p class="hh-hero-kicker">Both • Karachi</p>
+      </section>
+
+      <div class="hh-grid-2 hh-mt-section">
+        <div class="hh-card hh-card--white">
+          <p class="hh-meta">Public profile</p>
+          <h2 class="hh-card-title hh-card-title--flush">Skills and reputation</h2>
+          <div class="hh-list-row">
+            <span>Trust score</span>
+            <strong>100%</strong>
+          </div>
+          <div class="hh-list-row">
+            <span>Contributions</span>
+            <strong>35</strong>
+          </div>
+          <p class="hh-section-label">Skills</p>
+          <div class="hh-tags">
+            <span class="hh-tag hh-tag--skill">Figma</span>
+            <span class="hh-tag hh-tag--skill">UI/UX</span>
+            <span class="hh-tag hh-tag--skill">HTML/CSS</span>
+            <span class="hh-tag hh-tag--skill">Career Guidance</span>
+          </div>
+          <p class="hh-section-label">Badges</p>
+          <div class="hh-tags">
+            <span class="hh-tag hh-tag--skill">Design Ally</span>
+            <span class="hh-tag hh-tag--skill">Fast Responder</span>
+            <span class="hh-tag hh-tag--skill">Top Mentor</span>
+          </div>
+        </div>
+
+        <div class="hh-card hh-card--white">
+          <p class="hh-meta">Edit profile</p>
+          <h2 class="hh-card-title hh-card-title--flush">Update your identity</h2>
+          <form>
+            <div class="hh-row-2">
+              <div class="hh-field">
+                <label for="name">Name</label>
+                <input class="hh-input" id="name" value="Ayesha Khan" />
+              </div>
+              <div class="hh-field">
+                <label for="loc">Location</label>
+                <input class="hh-input" id="loc" value="Karachi" />
+              </div>
+            </div>
+            <div class="hh-field">
+              <label for="skills">Skills</label>
+              <input class="hh-input" id="skills" value="Figma, UI/UX, HTML/CSS, Career Guidance" />
+            </div>
+            <div class="hh-field">
+              <label for="interests">Interests</label>
+              <input class="hh-input" id="interests" value="Hackathons, UI/UX, Community Building" />
+            </div>
+            <button type="button" class="hh-btn hh-btn--teal hh-btn--block">Save profile</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
